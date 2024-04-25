@@ -1,0 +1,57 @@
+type Channel {
+  id: String
+  name: String
+}
+
+type Message {
+  channel: Channel
+  text: String
+  "ISO-8601"
+  timestamp: DateTime
+  user: User
+}
+
+"Mutation root"
+type Mutation {
+  "Sends a message to the given channel"
+  sendMessage(channelId: String!, message: String!): Void
+}
+
+"Query root"
+type Query {
+  "Lists available channels"
+  listChannels: [Channel]
+  "Lists all online users"
+  listUsers: [User]
+}
+
+"Subscription root"
+type Subscription {
+  "Listens for new messages"
+  subscribeToMessages(channelId: String!): Message
+  "Listens to user list change"
+  subscribeToUsers: UserList
+}
+
+type User {
+  id: String
+  "ISO-8601"
+  onlineSince: DateTime
+  username: String
+}
+
+type UserList {
+  users: [User]
+}
+
+"Scalar for BigDecimal"
+scalar BigDecimal
+
+"Scalar for BigInteger"
+scalar BigInteger
+
+"Scalar for DateTime"
+scalar DateTime
+
+"Scalar for Void"
+scalar Void

@@ -1,0 +1,6 @@
+query OverviewQuery {
+    listChannels {
+        id
+        name
+    }
+}
