@@ -1,16 +1,18 @@
-# quarkus-sveltekit-graphql
+# Quarkus, Quinoa, GraphQL, SveleteKit and Houdini Example (with OIDC Authentication).
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
-
-It also uses [SvelteKit](https://kit.svelte.dev/) and [Houdini](https://houdinigraphql.com/).
+This is an example application for creating authenticated GraphQL API with Quarkus and using it on the frontend with SvelteKit and Houdini, while also using SvelteKit in SPA mode and serving it from Quarkus.
 
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
+```
+
+And start the frontend dev server
+```shell script
+cd src/main/webui
+npm run dev
 ```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
