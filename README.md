@@ -53,8 +53,14 @@ If you want to learn more about building native executables, please consult http
 
 ## Related Guides
 
+### Backend
 - REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
 - REST Jackson ([guide](https://quarkus.io/guides/rest#json-serialisation)): Jackson serialization support for Quarkus REST. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it
 - OpenID Connect ([guide](https://quarkus.io/guides/security-openid-connect)): Verify Bearer access tokens and authenticate users with Authorization Code Flow
 - Quinoa ([guide](https://quarkiverse.github.io/quarkiverse-docs/quarkus-quinoa/dev/index.html)): Node.js extension which allows serving of single page apps alongside Quarkus.
 - SmallRye GraphQL ([guide](https://quarkus.io/guides/smallrye-graphql)): Create GraphQL Endpoints using the code-first approach from MicroProfile GraphQL
+
+### Frontend
+- Svelte ([guide](https://svelte.dev/docs/introduction)): Svelte is not a monolithic JavaScript library imported by applications: instead, Svelte compiles HTML templates to specialized code that manipulates the DOM directly, which may reduce the size of transferred files and give better client performance. Application code is also processed by the compiler, inserting calls to automatically recompute data and re-render UI elements when the data they depend on is modified
+- SvelteKit ([guide](https://kit.svelte.dev/docs/introduction)): SvelteKit is a framework for rapidly developing robust, performant web applications using Svelte. If you're coming from React, SvelteKit is similar to Next. If you're coming from Vue, SvelteKit is similar to Nuxt.
+- Houdini ([guide](https://houdinigraphql.com/intro)): Houdini is a GraphQL Client that deeply integrates with the SvelteKit data fetching pipeline so you can stop worrying about waterfalls, code-splitting, and so much more. Fully automatic and totally customizable. Declarative, Composable, Typesafe. 
